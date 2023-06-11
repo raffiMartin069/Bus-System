@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AgreementController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #257b79;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="69.0" layoutY="66.0" text="Terms &amp; Conditions">
+         <font>
+            <Font name="Segoe UI Bold" size="28.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="93.0" layoutY="138.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1848.0" prefWidth="400.0">
+               <children>
+                  <Label layoutX="38.0" layoutY="-4.0" prefHeight="1725.0" prefWidth="390.0" text="1. Introduction&#10;&#10;This document sets forth the terms and conditions under&#10;which ON THE GO (the &quot;Company&quot;) provides bus &#10;transportation services to its customers (the &quot;Customers&quot;).&#10;&#10;2. Scope of Services&#10;The Company provides bus transportation services to &#10;Customers who wish to travel to any of the 44 &#10;municipalities of Cebu province. The Company's buses &#10;travel between the municipalities and back to the terminal.&#10;&#10;3. Limitations&#10;The Company's bus transportation services are subject to&#10; the following limitations:&#10;&#10;3.1 The Company may cancel or reschedule any bus trip &#10;due to inclement weather or other unforeseen &#10;circumstances.&#10;3.2 The Company may refuse to transport any Customer &#10;who is intoxicated, disruptive, or otherwise a danger to &#10;themselves or others.&#10;3.3 The Company is not responsible for any personal &#10;belongings that are lost or damaged while in the &#10;Company's care.&#10;&#10;4. Line of Business&#10;The Company's line of business is to provide safe, reliable,&#10;and affordable bus transportation services to its Customers.&#10;&#10;5. Liabilities&#10;The Company is not liable for any injuries, damages, or &#10;losses that are caused by the negligence of the Company's employees, agents, or subcontractors. The Company is also not liable for any injuries, damages, or losses that are caused by the acts or omissions of Customers.&#10;&#10;6. Data Privacy&#10;The Company collects and uses Customer data in order to &#10;provide its bus transportation services. The Company will &#10;not sell or share Customer data with third parties without &#10;the Customer's consent.&#10;&#10;7. Governing Law&#10;These Terms and Conditions shall be governed by and &#10;construed in accordance with the laws of the Republic &#10;of the Philippines.&#10;&#10;8. Entire Agreement&#10;These Terms and Conditions constitute the entire &#10;agreement between the Company and the Customer &#10;with respect to the subject matter hereof and supersede &#10;all prior or contemporaneous communications, &#10;representations, or agreements, whether oral or written.&#10;&#10;9. Severability&#10;If any provision of these Terms and Conditions is held to &#10;be invalid or unenforceable, such provision shall be struck &#10;from these Terms and Conditions and the remaining &#10;provisions shall remain in full force and effect.&#10;&#10;10. Waiver&#10;No waiver of any provision of these Terms and Conditions &#10;shall be effective unless in writing and signed by both &#10;parties.&#10;&#10;11. Notices&#10;All notices and other communications hereunder shall be &#10;in writing and shall be deemed to have been duly given &#10;when delivered in person, upon the first business day &#10;following deposit in the United States mail, postage &#10;prepaid, certified or registered, return receipt requested, &#10;addressed as follows:&#10;&#10;If to the Company:&#10;On The Go&#10;R. Palma Street corner M. J. Cuenco Avenue&#10;&#10;If to the Customer:&#10;&#10;[Customer name]&#10;[address]&#10;&#10;or to such other address as either party may designate in writing &#10;from time to time.&#10;&#10;12. Headings&#10;The headings in these Terms and Conditions are for convenience &#10;only and shall not affect their interpretation.&#10;&#10;13. Counterparts&#10;These Terms and Conditions may be executed in one or more &#10;counterparts, each of which shall be deemed an original, but all of &#10;which together shall constitute one and the same instrument.&#10;&#10;14. Binding Effect&#10;These Terms and Conditions shall be binding upon and inure &#10;to the benefit of the parties hereto and their respective heirs, &#10;successors, and assigns." textAlignment="JUSTIFY" wrapText="true" AnchorPane.bottomAnchor="83.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <CheckBox fx:id="agreementBox" layoutX="10.0" layoutY="1756.0" mnemonicParsing="false" text="By checking this box, I agree to be bound by the &#10;Terms and Conditions of Service." />
+                  <Button fx:id="Agree_bttn" layoutX="203.0" layoutY="1809.0" mnemonicParsing="false" onAction="#agree_toMenu" text="Proceed" />
+                  <Button fx:id="cancel_Bttn" layoutX="137.0" layoutY="1809.0" mnemonicParsing="false" onAction="#cancel_toMenu" text="Cancel" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

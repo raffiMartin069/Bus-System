@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrimaryController">
+   <center>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="800.0">
+               <children>
+                  <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+                                 <children>
+                                    <MenuBar layoutX="229.0" layoutY="174.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <menus>
+                                          <Menu mnemonicParsing="false" text="File">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false" text="Close" />
+                                             </items>
+                                          </Menu>
+                                          <Menu mnemonicParsing="false" text="Edit">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false" text="Delete" />
+                                             </items>
+                                          </Menu>
+                                          <Menu mnemonicParsing="false" text="Help">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false" text="About" />
+                                             </items>
+                                          </Menu>
+                                       </menus>
+                                    </MenuBar>
+                                    <AnchorPane layoutX="107.0" layoutY="45.0" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #257b79;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                                    <BorderPane layoutX="271.0" layoutY="136.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+                                       <left>
+                                          <AnchorPane prefHeight="480.0" prefWidth="397.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Button fx:id="LogIn" layoutX="70.0" layoutY="259.0" mnemonicParsing="false" onAction="#LoginAccount" prefHeight="25.0" prefWidth="233.0" text="Log In" />
+                                                <Label id="firstWindowGreetings" contentDisplay="CENTER" layoutX="36.0" layoutY="46.0" prefHeight="17.0" prefWidth="337.0" text="Greetings" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="-1.0">
+                                                   <font>
+                                                      <Font name="Segoe UI Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <VBox layoutX="39.0" layoutY="162.0" prefHeight="84.0" prefWidth="294.0">
+                                                   <children>
+                                                      <Text id="FirstWindowLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="14.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <TextField />
+                                                      <Text id="FirstWindowLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                                                         <font>
+                                                            <Font name="Segoe UI" size="14.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <PasswordField />
+                                                   </children>
+                                                </VBox>
+                                                <Hyperlink fx:id="signUp" layoutX="70.0" layoutY="296.0" onAction="#proceedSignUp" text="Sign Up" />
+                                             </children>
+                                          </AnchorPane>
+                                       </left>
+                                       <center>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <ImageView fitHeight="364.0" fitWidth="404.0" layoutY="58.0" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0">
+                                                   <image>
+                                                      <Image url="@../../../../JavaFx%20Testing%20Area/OnTheGo/img/On%20the%20GO2.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </center>
+                                    </BorderPane>
+                                    <AnchorPane layoutX="191.0" layoutY="434.0" prefHeight="50.0" prefWidth="800.0" style="-fx-background-color: #257b79;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

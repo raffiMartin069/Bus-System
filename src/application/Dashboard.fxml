@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <MenuBar prefHeight="25.0" prefWidth="816.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <menus>
+                              <Menu mnemonicParsing="false" text="File">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Close" />
+                                 </items>
+                              </Menu>
+                              <Menu mnemonicParsing="false" text="Edit">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Delete" />
+                                 </items>
+                              </Menu>
+                              <Menu mnemonicParsing="false" text="Help">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="About" />
+                                 </items>
+                              </Menu>
+                           </menus>
+                        </MenuBar>
+                        <AnchorPane layoutY="23.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="785.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                           <children>
+                              <AnchorPane layoutX="11.0" layoutY="160.0" prefHeight="575.0" prefWidth="270.0" style="-fx-background-color: #257b79;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <HBox alignment="CENTER" layoutX="68.0" layoutY="75.0" prefHeight="97.0" prefWidth="115.0">
+                                       <children>
+                                          <ImageView fitHeight="105.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../img/profile-icon-9.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                    <VBox alignment="CENTER" layoutX="36.0" layoutY="194.0" prefHeight="30.0" prefWidth="180.0" style="-fx-background-radius: 20px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-radius: 20px;" text="Profile" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="36.0" layoutY="234.0" prefHeight="30.0" prefWidth="180.0" style="-fx-background-radius: 20px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-radius: 20px;" text="Map" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="36.0" layoutY="274.0" prefHeight="30.0" prefWidth="180.0" style="-fx-background-radius: 20px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-radius: 20px;" text="History" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" layoutX="36.0" layoutY="314.0" prefHeight="30.0" prefWidth="180.0" style="-fx-background-radius: 20px;">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" style="-fx-background-radius: 20px;" text="Payment" />
+                                       </children>
+                                    </VBox>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="20.0" prefHeight="23.0" prefWidth="223.0" text="USER GREETINGS!" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="CENTER" layoutX="36.0" layoutY="354.0" prefHeight="30.0" prefWidth="180.0" style="-fx-background-radius: 20px;">
+                                       <children>
+                                          <Button fx:id="SignOut" mnemonicParsing="false" onAction="#LogOut" prefHeight="25.0" prefWidth="180.0" style="-fx-background-radius: 20px;" text="Log Out" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
